@@ -9,4 +9,7 @@ public class City {
     public String getCityInfo() {
         return city_name + ", " + population;
     }
+    public String getIdentity() {
+        return "I am the City Class. I manage data regarding the urban capital and its residents.";
+    }
 }
