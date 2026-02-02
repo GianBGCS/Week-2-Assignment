@@ -8,4 +8,18 @@ public class Country {
         this.city = new City(city_name, city_pop);
         this.language = language;
     }
+
+    public String getIdentity() {
+        return "I am the Country Class. I act as the central hub connecting Geography, People, and Speech.";
+    }
+
+    public String getCountryInfo() {
+        return "--- COUNTRY REPORT: " + country_name + " ---\n" +
+                getIdentity() + "\n" +
+                language.getIdentity() + "\n" +
+                city.getIdentity() + "\n\n" +
+                "Details:\n" +
+                "Language: " + language.getLanguageInfo() + " speakers"+ "\n" +
+                "City: " + city.getCityInfo() + " people";
+    }
 }
